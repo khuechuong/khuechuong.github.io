@@ -172,7 +172,7 @@ sup {
 }
 
 a {
-  color: #3873b2;/*F85C70*/
+  color: #44a3ea;/*F85C70*/
   text-decoration: none;
   background-color: transparent;
 }
@@ -2783,9 +2783,9 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3873b2;
+  background-color: #44a3ea;
   /* #F85C70; */
-  border-color: #3873b2;
+  border-color: #44a3ea;
   /* #F85C70; */
 }
 
@@ -10840,7 +10840,7 @@ a.text-warning:hover, a.text-warning:focus {
 }
 
 .text-danger {
-  color: #3873b2 !important;
+  color: #44a3ea !important;
   /* color: #F85C70 !important; */
 }
 
@@ -11030,7 +11030,7 @@ p {
   display: block;
   width: 25px;
   height: 1.5px;
-  background-color: #3873b2;
+  background-color: #44a3ea;
   /* #F85C70; */
 }
 
@@ -11188,7 +11188,7 @@ p {
 }
 
 .portfolio .filters {
-  border-bottom: 2px solid #3873b2;
+  border-bottom: 2px solid #44a3ea;
   border-radius: 0;
   padding-bottom: 4px;
   /* between projects & bar */
@@ -11232,7 +11232,7 @@ p {
 
 .portfolio .filters a.active {
   opacity: 1;
-  background: #3873b2;
+  background: #44a3ea;
   color: #fff;
 }
 
@@ -11414,7 +11414,7 @@ pre .code {
 
 .social-icons .social-link {
   font-size: 18px;
-  color: #3873b2;
+  color: #44a3ea;
 }
 
 .social-icons .social-link:hover {
@@ -11440,7 +11440,7 @@ pre .code {
 }
 
 .navbar .nav-link.active {
-  color: #3873b2 !important;
+  color: #44a3ea !important;
   /* #F85C70 */
 }
 
