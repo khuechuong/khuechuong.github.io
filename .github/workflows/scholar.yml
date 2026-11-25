@@ -1,12 +1,9 @@
 name: Update Google Scholar citations
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-  # Daily schedule: turn on once the push-triggered run is confirmed working.
-  # schedule:
-  #   - cron: "0 6 * * *"
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC (~31 SerpAPI lookups/month; free tier is 100)
+  workflow_dispatch:      # manual "Run workflow" button in the Actions tab
 
 permissions:
   contents: write
