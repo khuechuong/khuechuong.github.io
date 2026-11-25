@@ -11277,8 +11277,8 @@ p {
   text-align: center;
   padding: 0 20px;
   color: #fff;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: 0.5s;
   -webkit-transition: 0.5s;
 }
@@ -11295,9 +11295,9 @@ p {
   /* lol */
 }
 
+/* overlay shown by default; fades out on hover to reveal the image (link stays clickable) */
 .portfolio .portfolio-container .portfolio-item:hover .content-holder {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
 }
 
 /* blog wrapper */
