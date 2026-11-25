@@ -254,7 +254,7 @@
                             <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-light font-weight-bold font40">6</h1>
+                            <h1 class="text-light font-weight-bold font40"><script>document.write(new Date().getFullYear() - 2020)</script></h1>
                             <p class="text-light mb-1">Years of Experience</p>
                         </div>
                     </div>
@@ -265,8 +265,8 @@
                             <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-light font-weight-bold font40">9</h1>
-                            <p class="text-light mb-1">Publications</p>
+                            <h1 class="text-light font-weight-bold font40" id="citation-count">136</h1>
+                            <p class="text-light mb-1">Publication Citations</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@
                             <div class="m-auto"><i class="ti-world icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-light font-weight-bold font40">1.5M+</h1>
+                            <h1 class="text-light font-weight-bold font40"><script>(function(){var d=new Date(),m=(d.getFullYear()-2026)*12+d.getMonth()-10;document.write((1.5+0.1*Math.max(0,m)).toFixed(1)+"M+")})()</script></h1>
                             <p class="text-light mb-1">Lines of Code</p>
                         </div>
                     </div>
@@ -970,6 +970,14 @@
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+
+    <!-- Google Scholar citation count (updated daily by .github/workflows/scholar.yml) -->
+    <script>
+        fetch('assets/data/scholar.json', {cache: 'no-store'})
+            .then(function (r) { return r.json(); })
+            .then(function (d) { if (d.citations) document.getElementById('citation-count').textContent = d.citations; })
+            .catch(function () {});
+    </script>
 
 </body>
 </html>
